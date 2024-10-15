@@ -1,0 +1,245 @@
+==28687== Memcheck, a memory error detector
+==28687== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==28687== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==28687== Command: /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app
+==28687==
+==28687== Syscall param set_robust_list(head) points to uninitialised byte(s)
+==28687==    at 0x52FF6A: __tls_init_tp (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AAFC9: __libc_setup_tls (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AA12D: (below main) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==  Address 0x40006f0 is in the brk data segment 0x4000000-0x4000dff
+==28687==  Uninitialised value was created
+==28687==    at 0x52C69B: brk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x52C733: sbrk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AAF0B: __libc_setup_tls (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AA12D: (below main) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==
+==28687== Conditional jump or move depends on uninitialised value(s)
+==28687==    at 0x5349BE: getrandom (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4DC255: ptmalloc_init.part.0 (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4DF044: malloc (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x55732A: _dl_get_origin (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x531926: _dl_non_dynamic_init (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x5332F9: __libc_init_first (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AA1D1: (below main) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==  Uninitialised value was created
+==28687==    at 0x52C69B: brk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x52C733: sbrk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AAF0B: __libc_setup_tls (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AA12D: (below main) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==
+==28687== Conditional jump or move depends on uninitialised value(s)
+==28687==    at 0x4DEE51: malloc (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x55732A: _dl_get_origin (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x531926: _dl_non_dynamic_init (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x5332F9: __libc_init_first (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AA1D1: (below main) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==  Uninitialised value was created
+==28687==    at 0x52C69B: brk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x52C733: sbrk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AAF0B: __libc_setup_tls (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AA12D: (below main) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==
+==28687== Conditional jump or move depends on uninitialised value(s)
+==28687==    at 0x4DEF41: malloc (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x55732A: _dl_get_origin (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x531926: _dl_non_dynamic_init (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x5332F9: __libc_init_first (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AA1D1: (below main) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==  Uninitialised value was created
+==28687==    at 0x52C69B: brk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x52C733: sbrk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AAF0B: __libc_setup_tls (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AA12D: (below main) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==
+==28687== Conditional jump or move depends on uninitialised value(s)
+==28687==    at 0x4DDBE1: _int_malloc (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4DE6F4: tcache_init.part.0 (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4DEF4B: malloc (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x55732A: _dl_get_origin (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x531926: _dl_non_dynamic_init (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x5332F9: __libc_init_first (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AA1D1: (below main) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==  Uninitialised value was created
+==28687==    at 0x52C69B: brk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x52C733: sbrk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AAF0B: __libc_setup_tls (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AA12D: (below main) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==
+==28687== Conditional jump or move depends on uninitialised value(s)
+==28687==    at 0x4DEE6E: malloc (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x55732A: _dl_get_origin (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x531926: _dl_non_dynamic_init (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x5332F9: __libc_init_first (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AA1D1: (below main) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==  Uninitialised value was created
+==28687==    at 0x52C69B: brk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x52C733: sbrk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AAF0B: __libc_setup_tls (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AA12D: (below main) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==
+==28687== Conditional jump or move depends on uninitialised value(s)
+==28687==    at 0x4DEE6E: malloc (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x552C10: _dl_init_paths (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x532053: _dl_non_dynamic_init (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x5332F9: __libc_init_first (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AA1D1: (below main) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==  Uninitialised value was created
+==28687==    at 0x52C69B: brk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x52C733: sbrk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AAF0B: __libc_setup_tls (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AA12D: (below main) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==
+==28687== Conditional jump or move depends on uninitialised value(s)
+==28687==    at 0x4DEE6E: malloc (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x552C2D: _dl_init_paths (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x532053: _dl_non_dynamic_init (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x5332F9: __libc_init_first (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AA1D1: (below main) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==  Uninitialised value was created
+==28687==    at 0x52C69B: brk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x52C733: sbrk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AAF0B: __libc_setup_tls (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AA12D: (below main) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==
+==28687== Conditional jump or move depends on uninitialised value(s)
+==28687==    at 0x4DEE6E: malloc (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x552EE9: _dl_init_paths (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x532053: _dl_non_dynamic_init (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x5332F9: __libc_init_first (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AA1D1: (below main) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==  Uninitialised value was created
+==28687==    at 0x52C69B: brk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x52C733: sbrk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AAF0B: __libc_setup_tls (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AA12D: (below main) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==
+==28687== Conditional jump or move depends on uninitialised value(s)
+==28687==    at 0x4DEE6E: malloc (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4E132E: strdup (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x552821: fillin_rpath.isra.0 (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x552F14: _dl_init_paths (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x532053: _dl_non_dynamic_init (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x5332F9: __libc_init_first (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AA1D1: (below main) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==  Uninitialised value was created
+==28687==    at 0x52C69B: brk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x52C733: sbrk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AAF0B: __libc_setup_tls (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AA12D: (below main) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==
+==28687== Conditional jump or move depends on uninitialised value(s)
+==28687==    at 0x4DEE6E: malloc (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x552934: fillin_rpath.isra.0 (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x552F14: _dl_init_paths (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x532053: _dl_non_dynamic_init (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x5332F9: __libc_init_first (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AA1D1: (below main) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==  Uninitialised value was created
+==28687==    at 0x52C69B: brk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x52C733: sbrk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AAF0B: __libc_setup_tls (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AA12D: (below main) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==
+==28687== Conditional jump or move depends on uninitialised value(s)
+==28687==    at 0x513580: __strcspn_sse42 (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x56BB3D: strsep (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x5527FE: fillin_rpath.isra.0 (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x552F14: _dl_init_paths (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x532053: _dl_non_dynamic_init (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x5332F9: __libc_init_first (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AA1D1: (below main) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==  Uninitialised value was created by a stack allocation
+==28687==    at 0x552DF0: _dl_init_paths (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==
+==28687== Conditional jump or move depends on uninitialised value(s)
+==28687==    at 0x51355A: __strcspn_sse42 (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x56BB3D: strsep (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x5527FE: fillin_rpath.isra.0 (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x552F14: _dl_init_paths (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x532053: _dl_non_dynamic_init (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x5332F9: __libc_init_first (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AA1D1: (below main) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==  Uninitialised value was created by a stack allocation
+==28687==    at 0x552DF0: _dl_init_paths (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==
+==28687== Conditional jump or move depends on uninitialised value(s)
+==28687==    at 0x4DEE6E: malloc (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x54ED8E: _dl_find_object_init (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x5322A7: _dl_non_dynamic_init (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x5332F9: __libc_init_first (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AA1D1: (below main) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==  Uninitialised value was created
+==28687==    at 0x52C69B: brk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x52C733: sbrk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AAF0B: __libc_setup_tls (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AA12D: (below main) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==
+==28687== Conditional jump or move depends on uninitialised value(s)
+==28687==    at 0x4DEE6E: malloc (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x404439: _GLOBAL__sub_I_eh_alloc.cc (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AA254: (below main) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==  Uninitialised value was created
+==28687==    at 0x52C69B: brk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x52C733: sbrk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AAF0B: __libc_setup_tls (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AA12D: (below main) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==
+==28687== Conditional jump or move depends on uninitialised value(s)
+==28687==    at 0x4DEE6E: malloc (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x540D54: _IO_file_doallocate (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4D6000: _IO_doallocbuf (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4D513F: _IO_file_overflow (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4D3C16: _IO_file_xsputn (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4CDC47: fwrite (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x46E023: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x46E3EB: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4052B8: main (main.cpp:7)
+==28687==  Uninitialised value was created
+==28687==    at 0x52C69B: brk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x52C733: sbrk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AAF0B: __libc_setup_tls (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AA12D: (below main) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==
+==28687== Conditional jump or move depends on uninitialised value(s)
+==28687==    at 0x4DEE6E: malloc (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4060FB: operator new(unsigned long) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x40514B: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:127)
+==28687==    by 0x405069: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (alloc_traits.h:464)
+==28687==    by 0x404F9B: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (stl_vector.h:346)
+==28687==    by 0x404DFC: std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) (stl_vector.h:361)
+==28687==    by 0x404B6E: std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) (stl_vector.h:305)
+==28687==    by 0x4048AC: std::vector<int, std::allocator<int> >::vector(unsigned long, int const&, std::allocator<int> const&) (stl_vector.h:524)
+==28687==    by 0x404696: AnalogSensor::Read() (AnalogSensor.cpp:16)
+==28687==    by 0x4052C7: main (main.cpp:7)
+==28687==  Uninitialised value was created
+==28687==    at 0x52C69B: brk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x52C733: sbrk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AAF0B: __libc_setup_tls (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AA12D: (below main) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==
+==28687== Conditional jump or move depends on uninitialised value(s)
+==28687==    at 0x52B91E: write (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4D345C: _IO_file_write (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4D45CF: _IO_do_write (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4D50A2: _IO_file_overflow (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x46DA58: std::ostream::put(char) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x46DCD7: std::basic_ostream<char, std::char_traits<char> >& std::endl<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4052E3: main (main.cpp:7)
+==28687==  Uninitialised value was created
+==28687==    at 0x52C69B: brk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x52C733: sbrk (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AAF0B: __libc_setup_tls (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==    by 0x4AA12D: (below main) (in /home/arthavg7/classwork/wk7_assignment/cmake-build-debug/app/shell-app)
+==28687==
+Averaged sensor reading: 10
+DONE
+==28687==
+==28687== HEAP SUMMARY:
+==28687==     in use at exit: 0 bytes in 0 blocks
+==28687==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==28687==
+==28687== All heap blocks were freed -- no leaks are possible
+==28687==
+==28687== For lists of detected and suppressed errors, rerun with: -s
+==28687== ERROR SUMMARY: 25 errors from 18 contexts (suppressed: 0 from 0)
